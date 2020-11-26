@@ -77,8 +77,6 @@ class PgCSE extends StatelessWidget {
                           Divider(),
                           Divider(),
                           Divider(),
-
-
                         ],
                       ),
                     ),

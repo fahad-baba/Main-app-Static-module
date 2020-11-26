@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'pg_CS.dart';
 import 'pg_BS.dart';
 import 'cse.dart';
+import 'me.dart';
 import 'home_page.dart';
 
 class DepartmentsPage extends StatelessWidget {
@@ -25,7 +26,7 @@ class DepartmentsPage extends StatelessWidget {
           Divider(),
           DepartmentTile(department: "Department of Computer Engineering", createPage: () => Cse()),
           Divider(),
-          DepartmentTile(department: "Department of Mechanical Engineering", createPage: () => HomePage()),
+          DepartmentTile(department: "Department of Mechanical Engineering", createPage: () => Me()),
           Divider(),
           DepartmentTile(department: "Department of Civil Engineering", createPage: () => HomePage()),
           Divider(),
