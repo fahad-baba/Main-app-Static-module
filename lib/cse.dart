@@ -1260,16 +1260,82 @@ class Cse extends StatelessWidget {
                       title: Column(
                         children: [
                           Heading(text: "Newsletters"),
-                          ExpansionTile(title: Text(""),
+                          ExpansionTile(title: Text("Issue"),
+                          subtitle: Text("2018"),
                           children: [
                             Column(
                               children: [
-                                ApprovalLink(text: "\nIssue-1", link: ""),
-                                ApprovalLink(text: "\nIssue-2", link: ""),
+                                ApprovalLink(text: "\nIssue-1", link: "https://ssmengg.edu.in/files/Newsletters/2018,%2001.docx"),
+                                ApprovalLink(text: "\nIssue-2", link: "https://ssmengg.edu.in/files/Newsletters/2018,02.docx"),
                               ],
                             ),
 
                           ],),
+                          ExpansionTile(title: Text("\nIssue"),
+                          subtitle: Text("2017"),
+                          children: [
+                            Column(
+                              children: [
+                                ApprovalLink(text: "\nIssue-1", link: "https://ssmengg.edu.in/files/Newsletters/2017,01.docx"),
+                                ApprovalLink(text: "\nIssue-2", link: "https://ssmengg.edu.in/files/Newsletters/2017,02.docx"),
+                              ],
+                            ),
+
+                          ],),
+                          ExpansionTile(title: Text("\nIssue"),
+                          subtitle: Text("2016"),
+                          children: [
+                            Column(
+                              children: [
+                                ApprovalLink(text: "\nIssue-1", link: "https://ssmengg.edu.in/files/Newsletters/2016%2001.docx"),
+                                //ApprovalLink(text: "\nIssue-2", link: ""),
+                              ],
+                            ),
+
+                          ],),
+                          ExpansionTile(title: Text("\nIssue"),
+                          subtitle: Text("2015"),
+                          children: [
+                            Column(
+                              children: [
+                                ApprovalLink(text: "\nIssue-1", link: "https://ssmengg.edu.in/files/Newsletters/2015%2001.docx"),
+                                ApprovalLink(text: "\nIssue-2", link: "https://ssmengg.edu.in/files/Newsletters/2015%2002.docx"),
+                              ],
+                            ),
+
+                          ],),
+                          ExpansionTile(title: Text("\nIssue"),
+                          subtitle: Text("2014"),
+                          children: [
+                            Column(
+                              children: [
+                                ApprovalLink(text: "\nIssue-1", link: "https://ssmengg.edu.in/files/Newsletters/2014%2001.docx"),
+                                ApprovalLink(text: "\nIssue-2", link: "https://ssmengg.edu.in/files/Newsletters/2014%2002.docx"),
+                              ],
+                            ),
+
+                          ],),
+                          Divider(),
+
+                          Heading(text: "Syllabus"),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ApprovalLink(text: "Batch 2012 Onwards", link: "https://ssmengg.edu.in/files/Syllabus/onwards%20syllabyus%202012.pdf"),
+                              ApprovalLink(text: "\nBatch 2015 Onwards", link: "https://ssmengg.edu.in/files/Syllabus/2015%20onwards.pdf"),
+                            ],
+                          ),
+                          Divider(),
+
+                          Heading(text: "Internships"),
+                          Text("No Data Available"),
+
+                          Divider(),
+                          Divider(),
+                          Divider(),
+                          Divider(),
+
+                          Text("*For latest info. visit college website"),
                         ],
                       ),
                     ),
