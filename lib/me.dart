@@ -43,7 +43,7 @@ class Me extends StatelessWidget {
                           subtitle: Text("Er. Nayeem Ahmad",textAlign: TextAlign.center,),
                         ),
                         Content(children: [
-                          TextSpan(text: ""),
+                          TextSpan(text: "\nThe discipline of Mechanical Engineering has a long and distinguished history of innovative invention and technological breakthroughs that have tremendously benefited the progress of man and society.\nIn today's fast-changing world, the ever-growing challenges of limited resources, rapid climate changes and preservation of environment demand a new generation of mechanical engineers cultivated in the necessary skills and innovative spirit to meet them.\nAt the department of Mechanical Engineering, wwe are committed to achieving excellence in training not only competent man-power for the profession, but in nurturing engineer-leaders with the ingenuity and drive to provide innovative and gold solutions to these global challenges.\nPursuing cutting-edge and impactfull research and development is also an essential part of the department's focus and contribution to the search for solution."),
                         ]),
                         Divider(),
 
@@ -55,11 +55,11 @@ class Me extends StatelessWidget {
 
                         Heading(text: "Vision"),
                         Content(children: [
-                          TextSpan(text: ""),
+                          TextSpan(text: "To be the premier institute of Mechanical Engineering is the vision of the Department."),
                         ]),
                         Heading(text: "Mission"),
                         Content(children: [
-                          TextSpan(text: ""),
+                          TextSpan(text: "To serve diverse global communities by advancing, disseminating and applying engineering knowledge for improving the quality of life and communicating the excitement of engineering.\nAs diverse human ideologies can get as wide the horizons of creativity can get, but the beauty of expression of scientific thoughts keeps on accruing through the metamorphosis of crudeness into dexterity, dexterity into alacrity and alacrity into acumen.\nThe department strives to channelize this crudeness through proper via- media which will end up in a persona of a proficient harbinger who knows his craft very well and has enough discourse of life and the attributes of a leader."),
                         ]),
                         Divider(),
 
@@ -123,10 +123,127 @@ class Me extends StatelessWidget {
                         Divider(),
 
                         Heading(text: "Result Analysis"),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          physics: BouncingScrollPhysics(),
+                          child: DataTable(columns: [
+                            DataColumn(label: Text("Batch")),
+                            DataColumn(label: Text("2007-11")),
+                            DataColumn(label: Text("2008-12")),
+                            DataColumn(label: Text("2009-13")),
+                            DataColumn(label: Text("2010-14")),
+                            DataColumn(label: Text("2011-15")),
+                            DataColumn(label: Text("2012-16")),
+                            DataColumn(label: Text("2013-17")),
+                          ], rows: [
+                            DataRow(cells: [
+                              DataCell(Text("Total Number of Students")),
+                              DataCell(Text("53")),
+                              DataCell(Text("47")),
+                              DataCell(Text("58")),
+                              DataCell(Text("60")),
+                              DataCell(Text("117")),
+                              DataCell(Text("119")),
+                              DataCell(Text("121")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("Number of Students appeared")),
+                              DataCell(Text("53")),
+                              DataCell(Text("47")),
+                              DataCell(Text("57")),
+                              DataCell(Text("60")),
+                              DataCell(Text("117")),
+                              DataCell(Text("119")),
+                              DataCell(Text("121")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("Number of Students Passed")),
+                              DataCell(Text("52")),
+                              DataCell(Text("47")),
+                              DataCell(Text("56")),
+                              DataCell(Text("59")),
+                              DataCell(Text("115")),
+                              DataCell(Text("107")),
+                              DataCell(Text("118")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("Number of Distinction")),
+                              DataCell(Text("05")),
+                              DataCell(Text("06")),
+                              DataCell(Text("24")),
+                              DataCell(Text("13")),
+                              DataCell(Text("21")),
+                              DataCell(Text("10")),
+                              DataCell(Text("03")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("Number of first divisions")),
+                              DataCell(Text("47")),
+                              DataCell(Text("41")),
+                              DataCell(Text("32")),
+                              DataCell(Text("46")),
+                              DataCell(Text("82")),
+                              DataCell(Text("95")),
+                              DataCell(Text("115")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("Pass Percentage")),
+                              DataCell(Text("98.1 %")),
+                              DataCell(Text("100 %")),
+                              DataCell(Text("98.2 %")),
+                              DataCell(Text("98.3 %")),
+                              DataCell(Text("98 %")),
+                              DataCell(Text("96.3 %")),
+                              DataCell(Text("97.5 %")),
+                            ]),
+                          ]),
+                        ),
 
                         Divider(),
 
                         Heading(text: "THE SEMINAR-WORKSHOP LIST"),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          physics: BouncingScrollPhysics(),
+                          child: DataTable(columns: [
+                            DataColumn(label: Text("S.NO.")),
+                            DataColumn(label: Text("TITLE OF THE SEMINAR/WORKSHOP")),
+                            DataColumn(label: Text("CONDUCTED BY")),
+                            DataColumn(label: Text("ORGANIZATION")),
+                          ], rows: [
+                            DataRow(cells: [
+                              DataCell(Text("1")),
+                              DataCell(Text("Seminar on AutoCAD")),
+                              DataCell(Text("Er. Afnan Asad")),
+                              DataCell(Text("SSM COLLEGE OF ENGG.")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("2")),
+                              DataCell(Text("National Seminar on Innovation/ Entrepreneurship\nand Additive Manufacturing")),
+                              DataCell(Text("1. Prof. Dr. Abid Haleem,Professor Jamia Milia Islamia, Delhi\n2.Mr. M.I Parray,Director JKEDI\n3.Dr. M A Shah, Prof NIT Srinagar")),
+                              DataCell(Text("SSM COLLEGE OF ENGG.")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("3")),
+                              DataCell(Text("Seminar on various career alternatives after B. Tech")),
+                              DataCell(Text("Er. Raza Qazi\nAlumni of University Of Colorado")),
+                              DataCell(Text("SSM COLLEGE OF ENGG. AND TECHNOLOGY")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("4")),
+                              DataCell(Text("Seminar on Solid works and Primera")),
+                              DataCell(Text("Er. Samreen Hamdani, CAD DESK")),
+                              DataCell(Text("SSM COLLEGE OF ENGG. AND TECHNOLOGY")),
+                            ]),
+                            DataRow(cells: [
+                              DataCell(Text("5")),
+                              DataCell(Text("Seminar on 3D Printing")),
+                              DataCell(Text("3Dexter")),
+                              DataCell(Text("SSM COLLEGE OF ENGG. AND TECHNOLOGY")),
+                            ]),
+
+                          ]),
+                        ),
 
                         Divider(),
                         
