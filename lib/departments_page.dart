@@ -20,21 +20,21 @@ class DepartmentsPage extends StatelessWidget {
             title: logoName(),
           ),
           Divider(),
-          DepartmentTile(department: "P.G Department of Computer Sciences", createPage: () => PgCSE()),
+          StaticTile(department: "P.G Department of Computer Sciences", createPage: () => PgCSE()),
           Divider(),
-          DepartmentTile(department: "P.G Department of Business Studies", createPage: () => PgBS()),
+          StaticTile(department: "P.G Department of Business Studies", createPage: () => PgBS()),
           Divider(),
-          DepartmentTile(department: "Department of Computer Engineering", createPage: () => Cse()),
+          StaticTile(department: "Department of Computer Engineering", createPage: () => Cse()),
           Divider(),
-          DepartmentTile(department: "Department of Mechanical Engineering", createPage: () => Me()),
+          StaticTile(department: "Department of Mechanical Engineering", createPage: () => Me()),
           Divider(),
-          DepartmentTile(department: "Department of Civil Engineering", createPage: () => HomePage()),
+          StaticTile(department: "Department of Civil Engineering", createPage: () => HomePage()),
           Divider(),
-          DepartmentTile(department: "Department of Electrical Engineering", createPage: () => HomePage()),
+          StaticTile(department: "Department of Electrical Engineering", createPage: () => HomePage()),
           Divider(),
-          DepartmentTile(department: "Department of Electronics and Communication Engineering", createPage: () => HomePage()),
+          StaticTile(department: "Department of Electronics and Communication Engineering", createPage: () => HomePage()),
           Divider(),
-          DepartmentTile(department: "Department of Applied Science and Humanities", createPage: () => HomePage()),
+          StaticTile(department: "Department of Applied Science and Humanities", createPage: () => HomePage()),
 
 
         ],
@@ -43,9 +43,9 @@ class DepartmentsPage extends StatelessWidget {
   }
 }
 
-class DepartmentTile extends StatelessWidget {
+class StaticTile extends StatelessWidget {
 
-  DepartmentTile( {@required this.department, @required this.createPage});
+  StaticTile( {@required this.department, @required this.createPage});
 
 
    final String department;

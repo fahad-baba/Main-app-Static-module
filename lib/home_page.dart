@@ -1,8 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Static_AppBar.dart';
 import 'Static_drawer.dart';
 import 'Inpage_Widgets.dart';
 import 'logo_name.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
 //  homePage(this.title);
@@ -25,6 +27,13 @@ class HomePage extends StatelessWidget {
           ListTile(
             title: Column(
               children: [
+                SizedBox(height: 15.0,),
+                Heading(text: "Our Documentary"),
+                GestureDetector(child: InpageImage(image: "youtube.jpg"),
+                  onTap: () {
+                    launch("https://www.youtube.com/watch?v=E_pBJ-dC88M&t=298s");
+                  },
+                ),
                 Divider(),
                 Heading(text: "About SSM College",),
                 Content(children: [
@@ -108,7 +117,29 @@ class HomePage extends StatelessWidget {
                       "Tel: 0194-2137282\n\n"
                       "E-mail: sssmkashmir@gmail.com\n\n"
                       "info@ssmengg.edu.in")
-                ])
+                ]),
+                SizedBox(height: 15.0,),
+                GestureDetector(
+                  onTap: () {
+                    launch("https://www.google.com/maps/place/SSM+College+of+Engineering/@34.155447,74.647854,16z/data=!4m5!3m4!1s0x0:0x494829adf7e64e4c!8m2!3d34.1554465!4d74.6478542?hl=en-US");
+                  },
+                  child: ListTile(
+                    leading: Heading(text: "Find us on:"),
+                    subtitle: Text("Google Maps",textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
+                    title: InpageImage(image: "maps.jpg"),
+
+                  ),
+                ),
+//                Heading(text: "Find us on Google Maps"),
+//                GestureDetector(child: InpageImage(image: "maps.jpg"),
+//                  onTap: () {
+//                    launch("https://www.google.com/maps/place/SSM+College+of+Engineering/@34.155447,74.647854,16z/data=!4m5!3m4!1s0x0:0x494829adf7e64e4c!8m2!3d34.1554465!4d74.6478542?hl=en-US");
+//                  },
+//                ),
+
+              Divider(),
+              Divider(),
+              Divider(),
 
                 ],
             ),

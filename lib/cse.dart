@@ -17,7 +17,7 @@ class Cse extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pop();
                   }),
-              title: Text("Department of Business Studies"),
+              title: Text("Computer Engineering"),
               bottom: TabBar(tabs: [
                 Tab(text: "Home",),
                 Tab(text: "Academics",),
